@@ -1,0 +1,10 @@
+C:\Users\Jonaca Hudson\source\repos\ConsoleApp7\ConsoleApp7\bin\Debug\netcoreapp1.1\ConsoleApp7.deps.json
+C:\Users\Jonaca Hudson\source\repos\ConsoleApp7\ConsoleApp7\bin\Debug\netcoreapp1.1\ConsoleApp7.runtimeconfig.json
+C:\Users\Jonaca Hudson\source\repos\ConsoleApp7\ConsoleApp7\bin\Debug\netcoreapp1.1\ConsoleApp7.runtimeconfig.dev.json
+C:\Users\Jonaca Hudson\source\repos\ConsoleApp7\ConsoleApp7\bin\Debug\netcoreapp1.1\ConsoleApp7.dll
+C:\Users\Jonaca Hudson\source\repos\ConsoleApp7\ConsoleApp7\bin\Debug\netcoreapp1.1\ConsoleApp7.pdb
+C:\Users\Jonaca Hudson\source\repos\ConsoleApp7\ConsoleApp7\obj\Debug\netcoreapp1.1\ConsoleApp7.csprojResolveAssemblyReference.cache
+C:\Users\Jonaca Hudson\source\repos\ConsoleApp7\ConsoleApp7\obj\Debug\netcoreapp1.1\ConsoleApp7.csproj.CoreCompileInputs.cache
+C:\Users\Jonaca Hudson\source\repos\ConsoleApp7\ConsoleApp7\obj\Debug\netcoreapp1.1\ConsoleApp7.AssemblyInfo.cs
+C:\Users\Jonaca Hudson\source\repos\ConsoleApp7\ConsoleApp7\obj\Debug\netcoreapp1.1\ConsoleApp7.dll
+C:\Users\Jonaca Hudson\source\repos\ConsoleApp7\ConsoleApp7\obj\Debug\netcoreapp1.1\ConsoleApp7.pdb
