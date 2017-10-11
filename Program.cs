@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
+
 namespace ConsoleApp7
 {
     class Program
@@ -10,42 +11,71 @@ namespace ConsoleApp7
         {
             Console.WriteLine("Welcome to the Pig Latin Translator!");
 
+            string input;
+
             bool repeat = true;
             while (repeat == true)
             {
-                Console.Write("Enter a word to translate:");
-                string input = Console.ReadLine();
-                input = input.ToLower();
+                try
+                {
+                    Console.Write("Enter a word to translate:");
+                    input = Console.ReadLine();
+                    input = input.ToLower();
+
+                    if (input.Length < 3)
+                    {
+                        Console.WriteLine("Please input a word of 3 letters or more");
+                    }
+                  
+                    //const string vowels = "aeiouAEIOU";
+                    List<char> sentence = new List<char>() {'a', 'e', 'i','o','u'};
+                    char vowels = input.ToCharArray()[0];
+
+                    foreach (string word in input.Split(' '))
+                    {
+                        string pig1 = input.Substring(0, 2);
+                        string pig2 = input.Substring(1, input.Length-1);
+                        int letter = input.IndexOf(word);
+
+                        if (letter == -1)
+                        {
+                            Console.WriteLine(pig2 + pig1 + "ay");
+
+                        } 
+                        else if (input.Contains(vowels))
+                        {
+                            Console.WriteLine(word + "way");
+                        }
+                    }
+                }
+                catch (ArgumentOutOfRangeException e)
+                {
+                    Console.WriteLine("Please use real letters only");
+                }
                 
-                char[] vowels = { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I','O','U' };
-                List<string> sentence = new List<string>();
-
-                foreach (string word in input.Split(' '))
-                {
-                    string pig1 = word.Substring(0,3);
-                    string pig2 = word.Substring(1, word.Length - 1);
-                    int letter = vowels.IndexOf(pig1);
-
-                    if (letter ==-1)
-                    {
-                        Console.WriteLine(pig1+pig2+"ay");
-
-                    }
-                    else
-                    {
-                        Console.WriteLine();
-                    }
-                }
-
-                Console.WriteLine("Would you like to run the program again? Y or N");
-                string answer = Console.ReadLine();
-                answer = answer.ToLower();
-
-                if(answer != "y")
-                {
-                    repeat = false;
-                }
+                repeat = Continue();
             }
+        }
+        public static bool Continue()
+        {
+            Console.WriteLine("Do you wish to Continue? y/n");
+            string input = Console.ReadLine();
+            input = input.ToLower();
+            bool goOn;
+            if (input == "y")
+            {
+                goOn = true;
+            }
+            else if (input == "n")
+            {
+                goOn = false;
+            }
+            else
+            {
+                Console.WriteLine("I don't understand that, let's try again");
+                goOn = Continue();
+            }
+            return goOn;
         }
     }
 }
